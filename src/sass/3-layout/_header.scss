@@ -1,0 +1,72 @@
+/* ================================= 
+  Header
+==================================== */
+
+.header {
+
+  &__container {
+    padding: 5px 0 0;
+    width: 100%;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: rgba(0,0,0,0.05);  
+    }
+  }
+}
+
+
+/* ================================= 
+  Header-info
+==================================== */
+.header-info {
+  
+  &__ul {
+    width: 55%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @include list-style {
+    font-size: 14px;
+  }
+  
+}
+
+/* ================================= 
+  Site-logo
+==================================== */
+
+.site-logo {
+  &__img {
+    width: 60px;
+    height: 60px;  
+  }
+  
+}  
+
+.nav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  padding: 0 .5rem;
+}
+
+
+
+

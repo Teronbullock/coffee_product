@@ -1,0 +1,16 @@
+{
+  "name": "starbucks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch src/sass:src/css",
+    "cp-js": "cp src/js/*.js build/js",
+    "cp-html": "cp src/*.html build/", 
+    "cp-css": "cp src/css/*.css build/css/",
+    "build": "npm run cp-html & npm run cp-js & npm run cp-css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,268 @@
+/* ================================= 
+  Variables
+==================================== */
+/* ================================= 
+  Mixins
+==================================== */
+/* ================================= 
+  Media Queries
+==================================== */
+/* ================================= 
+  Functions
+==================================== */
+/* ================================= 
+  Global
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* ================================= 
+  Wrapper
+==================================== */
+.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ================================= 
+  Main
+==================================== */
+/* ================================= 
+  Header
+==================================== */
+.header__container {
+  padding: 5px 0 0;
+  width: 100%;
+}
+.header__container:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* ================================= 
+  Header-info
+==================================== */
+.header-info__ul {
+  width: 55%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header-info__li {
+  display: inline-block;
+}
+.header-info__link {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ================================= 
+  Site-logo
+==================================== */
+.site-logo__img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  padding: 0 0.5rem;
+}
+
+/* ================================= 
+  Nav
+==================================== */
+.nav {
+  display: block;
+  margin-top: 0.5rem;
+}
+.nav__ul {
+  display: none;
+}
+.nav__li {
+  display: inline-block;
+}
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ================================= 
+  Mobile Nav
+==================================== */
+.mobile-nav {
+  display: none;
+}
+.mobile-nav__ul {
+  max-width: 480px;
+  margin: auto;
+  background-color: #1e1e1e;
+  height: 325px;
+  color: white;
+  padding: 1rem 0;
+}
+.mobile-nav__link {
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mobile-nav__link:hover {
+  background-color: #ddd;
+  color: #000;
+}
+.mobile-nav__link:active {
+  background: #2B8815;
+  color: #fff;
+}
+.mobile-nav__btn {
+  margin-top: -4px;
+  margin-right: 0.75rem;
+}
+.mobile-nav__bar {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #006341;
+  margin: 8px 0;
+}
+
+/* ================================= 
+  Hero
+==================================== */
+.hero {
+  padding-top: 0.5rem;
+}
+.hero__container {
+  padding: 0 1rem;
+}
+.hero__title {
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0.5rem 0;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+}
+.hero-img__container {
+  height: 215px;
+}
+
+/* ================================= 
+  Feat
+==================================== */
+.feat {
+  margin: 3rem 0;
+}
+.feat__h2 {
+  margin: 2rem 0 3rem;
+}
+.feat__img {
+  height: 100%;
+  width: 100%;
+}
+.feat__container {
+  padding: 0 1rem;
+}
+
+/* ================================= 
+  Rewards
+==================================== */
+.rewards__container {
+  color: #fff;
+  background-color: #1f3933;
+}
+.rewards__a {
+  height: 225px;
+}
+.rewards__img {
+  background: #1f3933 url("https://globalassets.starbucks.com/assets/f8402ac7d48640b88543d5fa84d6679b.jpg") no-repeat center;
+  background-size: contain;
+  height: 575px;
+  width: 100%;
+}
+.rewards__overlay {
+  text-align: center;
+  padding-top: 225px;
+}
+.rewards__h2 {
+  font-size: 32px;
+}
+
+/* ================================= 
+  BTN
+==================================== */
+.btn__container {
+  text-align: center;
+  margin-top: 2rem;
+}
+.btn__span {
+  border: #006341 solid 2px;
+  border-radius: 5px;
+  padding: 0.75rem;
+}
+.btn__call-out {
+  height: 225px;
+  text-decoration: none;
+  color: #000;
+}
+.btn__call-out-feat {
+  color: #fff;
+  margin-top: 3rem;
+}
+
+/* ================================= 
+  Form
+==================================== */
+/* ================================= 
+  Card
+==================================== */
+/* ================================= 
+  Btn Styles
+==================================== */
+.btn__feat {
+  margin-top: 3rem;
+}
+.btn__feat-a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+/* ================================= 
+  BTN
+==================================== */
+.btn {
+  
+  &__container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  &__span {
+    border: #006341 solid 2px;
+    border-radius: 5px;
+    padding: .75rem;
+  }
+  
+  &__call-out {
+    height: 225px;
+    text-decoration: none;
+    color: #000;
+
+    &-feat {
+      color: #fff;
+      margin-top: 3rem;
+    }
+  }
+  
+}  

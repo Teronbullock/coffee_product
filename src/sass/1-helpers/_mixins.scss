@@ -1,0 +1,57 @@
+/* ================================= 
+  Mixins
+==================================== */
+@mixin list-style {
+   &__li {
+    display: inline-block;
+  }
+  
+  &__link {
+   color: #000;
+   text-decoration: none;
+   @content;
+  }
+}
+
+@mixin container-style {
+  padding: 0 1rem;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@mixin mq($break) {
+  @if $break == 'xs' {
+    @media (max-width: $break-xs){
+      @content;
+    }
+  } 
+  @else if $break == 'sm' {
+    @media (min-width: $break-sm){
+      @content;
+    }  
+  }
+  @else if $break == 'm' {
+    @media (min-width: $break-m){
+      @content;
+    }  
+  }
+  @else if $break == 'l' {
+    @media (min-width: $break-l){
+      @content;
+    }  
+  }
+  @else if $break == 'xl' {
+    @media (min-width: $break-xl){
+      @content;
+    }  
+  }
+  @else if $break == 'ret' {
+    @media (min-width: $break-ret){
+      @content;
+    }  
+  }
+
+
+}
