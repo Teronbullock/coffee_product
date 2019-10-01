@@ -2,10 +2,10 @@
   app.js
 ==================================== */
 function hideNav() {
-  var mNav = document.getElementById("mobile-nav");
-  if (mNav.style.display === "block") {
-    mNav.style.display = "none";
-  } else {
-    mNav.style.display = "block";
-  }
+    var mNav = document.getElementById("nav-mobile");
+    if (mNav.style.display === "block") {
+        mNav.style.display = "none";
+    } else {
+        mNav.style.display = "block";
+    }
 }

@@ -19,80 +19,87 @@
 
 body {
   margin: 0;
+  font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
 }
 
 ul {
   list-style: none;
 }
 
-p {
-  line-height: 1.8;
-  font-size: 16px;
-}
-
 /* ================================= 
-  Wrapper
+  Container
 ==================================== */
-.wrapper {
+.site-container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+/* ================================= 
+  Header
+==================================== */
+.header {
+  padding: 0.5rem 0 0;
+  width: 100%;
+}
+
+/* ================================= 
+  Hero
+==================================== */
+.site-title {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0.5rem 0 1rem;
+}
+@media (min-width: 414px) {
+  .site-title {
+    margin: 1.5rem 0;
+  }
+}
+
+.hero__p {
+  margin: 0.75rem 0 1.75rem;
+}
+@media (min-width: 414px) {
+  .hero__p {
+    margin: 1.5rem 0 2rem;
+  }
 }
 
 /* ================================= 
   Main
 ==================================== */
 /* ================================= 
-  Header
+  footer
 ==================================== */
-.header__container {
-  padding: 5px 0 0;
-  width: 100%;
+.footer {
+  background-color: #f9f8f6;
+  margin-top: 1rem;
 }
-.header__container:after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.05);
+.footer__container {
+  padding: 0 1rem;
+}
+.footer__line {
+  border-bottom: #000 solid 1px;
+  margin: 1rem 0;
+}
+.footer__email, .footer__social {
+  margin: 3rem 0;
 }
 
 /* ================================= 
-  Header-info
+  Header icon
 ==================================== */
-.header-info__ul {
-  width: 55%;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-.header-info__li {
-  display: inline-block;
-}
-.header-info__link {
-  color: #000;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* ================================= 
-  Site-logo
-==================================== */
-.site-logo__img {
-  width: 60px;
-  height: 60px;
-}
-
-.nav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.logo-container {
+.header-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -100,41 +107,52 @@ p {
   margin-top: 0px;
   padding: 0 0.5rem;
 }
+@media (min-width: 414px) {
+  .header-icon {
+    margin-top: 0.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .header-icon {
+    margin: -1rem 1rem 0;
+  }
+}
+.header-icon__img {
+  width: 60px;
+  height: 60px;
+}
+.header-icon__btn {
+  margin-top: -4px;
+  margin-right: 0.75rem;
+}
+.header-icon__menu-bar {
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: #006341;
+  margin: 8px 0;
+}
 
 /* ================================= 
   Nav
 ==================================== */
 .nav {
-  display: block;
   margin-top: 0.5rem;
 }
-.nav__ul {
+.nav-desk, .nav-mobile {
   display: none;
 }
-.nav__li {
-  display: inline-block;
+.nav-mobile__ul, .nav-mobile__link, .nav-mobile__link:active {
+  color: #fff;
 }
-.nav__link {
-  color: #000;
-  text-decoration: none;
-}
-
-/* ================================= 
-  Mobile Nav
-==================================== */
-.mobile-nav {
-  display: none;
-}
-.mobile-nav__ul {
+.nav-mobile__ul {
   max-width: 480px;
   margin: auto;
   background-color: #1e1e1e;
-  height: 325px;
-  color: white;
+  height: auto;
   padding: 1rem 0;
 }
-.mobile-nav__link {
-  color: #fff;
+.nav-mobile__link {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -142,48 +160,52 @@ p {
   text-align: center;
   text-transform: uppercase;
 }
-.mobile-nav__link:hover {
+.nav-mobile__link:hover, .nav-mobile__link:active {
   background-color: #ddd;
   color: #000;
 }
-.mobile-nav__link:active {
-  background: #2B8815;
-  color: #fff;
-}
-.mobile-nav__btn {
-  margin-top: -4px;
-  margin-right: 0.75rem;
-}
-.mobile-nav__bar {
-  display: block;
-  height: 3px;
-  width: 30px;
-  background-color: #006341;
-  margin: 8px 0;
-}
 
 /* ================================= 
-  Hero
+  Nutri 
 ==================================== */
-.hero {
-  padding-top: 0.5rem;
+.nutri__label {
+  display: block;
+  color: #929292;
+  font-size: 14px;
 }
-.hero__container {
-  padding: 0 1rem;
+.nutri__sel {
+  background: url("../img/icons/arrow.png") no-repeat 95% 95%;
+  background-size: 25px;
 }
-.hero__title {
-  font-size: 32px;
-  text-align: center;
-  line-height: 1.4;
-  margin: 0.5rem 0;
-}
-
-.hero-img {
-  height: 100%;
+.nutri__sel-input {
+  display: block;
+  font-size: 18px;
+  font-weight: 900;
   width: 100%;
 }
-.hero-img__container {
-  height: 215px;
+.nutri-table__p {
+  border-bottom: 5px solid #dedede;
+}
+.nutri-table__row {
+  border-bottom: 1px solid #dedede;
+  padding: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+}
+.nutri-table__span-l {
+  text-align: left;
+}
+.nutri-table__span-r {
+  text-align: right;
+}
+.nutri-table__span-sub {
+  margin-left: 2rem;
+}
+.nutri-table__bottom {
+  margin-top: 1.5rem;
+}
+.nutri-table__bottom p {
+  margin: 0.25rem 0;
 }
 
 /* ================================= 
@@ -193,14 +215,11 @@ p {
   margin: 3rem 0;
 }
 .feat__h2 {
-  margin: 2rem 0 3rem;
+  margin: 1.5rem 0 0.5rem;
 }
-.feat__img {
-  height: 100%;
-  width: 100%;
-}
-.feat__container {
-  padding: 0 1rem;
+.feat__sub-header {
+  margin: 0;
+  font-style: italic;
 }
 
 /* ================================= 
@@ -210,51 +229,129 @@ p {
   color: #fff;
   background-color: #1f3933;
 }
+.rewards__img {
+  background: #1f3933 url("../img/rewards-bg.jpg") no-repeat;
+  background-size: 900px;
+  background-position: 25% 5%;
+  height: 525px;
+  width: 100%;
+}
 .rewards__a {
   height: 225px;
 }
-.rewards__img {
-  background: #1f3933 url("https://globalassets.starbucks.com/assets/f8402ac7d48640b88543d5fa84d6679b.jpg") no-repeat center;
-  background-size: contain;
-  height: 575px;
-  width: 100%;
-}
 .rewards__overlay {
   text-align: center;
-  padding-top: 225px;
+  padding-top: 200px;
 }
 .rewards__h2 {
   font-size: 32px;
+}
+.rewards__p {
+  margin-bottom: 3rem;
+}
+
+/* ================================= 
+  Ul Module
+==================================== */
+.ul {
+  padding: 0;
+}
+.ul__li {
+  display: inline-block;
+}
+.ul__link {
+  color: #000;
+  text-decoration: none;
+}
+.ul__link--font-s {
+  font-size: 12px;
+}
+.ul--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ul--center {
+  margin: 0 auto;
+  width: 50%;
+}
+.ul--social {
+  width: 50%;
+}
+.ul--social__li {
+  height: 30px;
+  width: 30px;
+}
+.ul--footer li {
+  padding: 0.5rem 0;
+}
+.ul--footer span {
+  cursor: pointer;
 }
 
 /* ================================= 
   BTN
 ==================================== */
-.btn__container {
+.btn {
   text-align: center;
-  margin-top: 2rem;
 }
-.btn__span {
+.btn__link {
+  text-decoration: none;
+  color: #000;
+}
+.btn__link--txt-wh {
+  color: #fff;
+}
+.btn__label {
   border: #006341 solid 2px;
   border-radius: 5px;
   padding: 0.75rem;
 }
-.btn__call-out {
-  height: 225px;
-  text-decoration: none;
-  color: #000;
-}
-.btn__call-out-feat {
-  color: #fff;
-  margin-top: 3rem;
+
+/* ================================= 
+  Img
+==================================== */
+.img__media {
+  height: 100%;
+  width: 100%;
 }
 
 /* ================================= 
-  Form
-==================================== */
-/* ================================= 
   Card
 ==================================== */
+/* ================================= 
+  Form
+==================================== */
+.form__input {
+  background-color: #fff;
+  border: #d2d2d2 solid 1px;
+  border-radius: 5px;
+  padding: 0.25rem;
+  width: 100%;
+  margin: 0 0.75rem 0.5rem 0;
+  line-height: 1.8;
+}
+.form__input[value] {
+  color: #b3b3b3;
+}
+.form__email {
+  max-width: 290px;
+}
+.form__zip {
+  max-width: 100px;
+}
+.form__submit {
+  background-color: #3d3935;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 150px;
+  font-size: 16px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
 /* ================================= 
   Btn Styles
 ==================================== */

@@ -1,0 +1,21 @@
+/* ================================= 
+  footer
+==================================== */
+
+.footer {
+    background-color: #f9f8f6;
+    margin-top: 1rem;
+    &__container {
+        padding: 0 1rem;
+    }
+
+    &__line {
+        border-bottom: #000 solid 1px;
+        margin: 1rem 0;
+    }
+
+    &__email,
+    &__social {
+        margin: 3rem 0;
+    }
+}

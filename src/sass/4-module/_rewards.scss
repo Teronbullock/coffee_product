@@ -1,0 +1,35 @@
+/* ================================= 
+  Rewards
+==================================== */
+
+.rewards {
+    &__container {
+        color: #fff;
+        background-color: #1f3933;
+    }
+
+    &__img {
+        background: #1f3933 url("../img/rewards-bg.jpg") no-repeat;
+        background-size: 900px;
+        background-position: 25% 5%;
+        height: 525px;
+        width: 100%;
+    }
+
+    &__a {
+        height: 225px;
+    }
+
+    &__overlay {
+        text-align: center;
+        padding-top: 200px;
+    }
+
+    &__h2 {
+        font-size: 32px;
+    }
+
+    &__p {
+        margin-bottom: 3rem;
+    }
+}

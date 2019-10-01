@@ -2,3 +2,38 @@
   Form
 ==================================== */
 
+.form {
+    &__input {
+        background-color: #fff;
+        border: #d2d2d2 solid 1px;
+        border-radius: 5px;
+        padding: 0.25rem;
+        width: 100%;
+        margin: 0 0.75rem 0.5rem 0;
+        line-height: 1.8;
+
+        &[value] {
+            color: #b3b3b3;
+        }
+    }
+
+    &__email {
+        max-width: 290px;
+    }
+
+    &__zip {
+        max-width: 100px;
+    }
+
+    &__submit {
+        background-color: #3d3935;
+        color: #fff;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        display: block;
+        width: 150px;
+        font-size: 16px;
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+}
