@@ -3,10 +3,8 @@
 ==================================== */
 
 .rewards {
-    &__container {
-        color: #fff;
-        background-color: #1f3933;
-    }
+    color: #fff;
+    background-color: #1f3933;
 
     &__img {
         background: #1f3933 url("../img/rewards-bg.jpg") no-repeat;
@@ -16,7 +14,7 @@
         width: 100%;
     }
 
-    &__a {
+    &__link {
         height: 225px;
     }
 
@@ -25,8 +23,8 @@
         padding-top: 200px;
     }
 
-    &__h2 {
-        font-size: 32px;
+    &__title {
+        font-size: 28px;
     }
 
     &__p {

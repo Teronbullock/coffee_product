@@ -12,39 +12,27 @@
     &__link {
         color: #000;
         text-decoration: none;
+    }
+ 
+}
 
-        &--font-s {
-            font-size: 12px;
-        }
+
+.social-list {
+  width: 50%;
+  
+  &__li {
+      height: 30px;
+      width: 30px;
+  }
+  
+}
+
+.footer-list {
+    &__li {
+        padding: 0.5rem 0;
     }
 
-    &--flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &--center {
-        margin: 0 auto;
-        width: 50%;
-    }
-
-    &--social {
-        width: 50%;
-
-        &__li {
-            height: 30px;
-            width: 30px;
-        }
-    }
-
-    &--footer {
-        li {
-            padding: 0.5rem 0;
-        }
-
-        span {
-            cursor: pointer;
-        }
+    &__span {
+        cursor: pointer;
     }
 }

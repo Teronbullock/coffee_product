@@ -6,16 +6,19 @@
 
     &__link {
         text-decoration: none;
-        color: #000;
-
-        &--txt-wh {
-            color: #fff;
-        }
+        
+    
     }
 
     &__label {
         border: #006341 solid 2px;
         border-radius: 5px;
         padding: 0.75rem;
+        color: #000;
     }
+}
+
+.btn__label--wh {
+  color: #fff;
+   border: #fff solid 2px;
 }

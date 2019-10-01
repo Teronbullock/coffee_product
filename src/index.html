@@ -11,31 +11,32 @@
     <body>
         <div class="site-container">
             <header class="header">
-                <div class="header__info">
-                    <ul class="ul ul--flex ul--center">
+              <div class="header-container">
+                <div class="header-info">
+                    <ul class="ul ml--flex ml--center">
                         <li class="ul__li">
-                            <a class="ul__link ul__link--font-s" href="#">Find a Store</a>
+                            <a class="ul__link" href="#">Find a Store</a>
                         </li>
                         <li class="ul__li">
-                            <a class="ul__link ul__link--font-s" href="#">Sign In</a>
+                            <a class="ul__link" href="#">Sign In</a>
                         </li>
                         <li class="ul__li">
-                            <a class="ul__link ul__link--font-s" href="#">Join Now</a>
+                            <a class="ul__link" href="#">Join Now</a>
                         </li>
                     </ul>
                 </div>
                 <div class="header-icon">
-                    <a class="header-icon__logo" href="#"
+                    <a class="site-logo" href="#"
                         ><img
-                            class="header-icon__img"
+                            class="site-logo__img"
                             src="https://stories.starbucks.com/uploads/2019/01/Photo_TBD-320x411_1-1.jpg"
                             alt="Starbuck logo"
                     /></a>
 
-                    <a href="javascript:void(0);" class="header-icon__btn" onclick="hideNav()">
-                        <span class="header-icon__menu-bar"></span>
-                        <span class="header-icon__menu-bar"></span>
-                        <span class="header-icon__menu-bar"></span>
+                    <a href="javascript:void(0);" class="mob-menu-btn" onclick="hideNav()">
+                        <span class="mob-menu-btn__bar"></span>
+                        <span class="mob-menu-btn__bar"></span>
+                        <span class="mob-menu-btn__bar"></span>
                     </a>
                 </div>
                 <nav class="nav">
@@ -81,6 +82,7 @@
                         </ul>
                     </div>
                 </nav>
+              </div>  
             </header>
             <div class="hero">
                 <div class="container">
@@ -104,16 +106,16 @@
                 </div>
             </div>
             <main class="main">
-                <section class="feat" id="feat">
-                    <div class="feat__header">
+                <section class="sec-card" id="feat">
+                    <div class="sec-card__header">
                         <div class="img__container">
                             <img class="img" src="./img/cold_brew.gif" />
                         </div>
                     </div>
                     <div class="container">
-                        <h2 class="feat__h2">FALL. SEASON. LONG.</h2>
-                        <p class="feat__sub-header">*This fall drink returns for a limited time.</p>
-                        <p class="feat__p">
+                        <h2 class="sec-card__title">FALL. SEASON. LONG.</h2>
+                        <p class="sec-card__sub-title">*This fall drink returns for a limited time.</p>
+                        <p class="sec-card__p">
                             The cold brew&#39;s cocoa notes are perfectly complemented by flavors of
                             vanilla and real pumpkin which results in a smooth, well rounded
                             beverage that balances the flavors of the season without being overly
@@ -121,7 +123,7 @@
                         </p>
                         <div class="nutri">
                             <div class="nutri__header">
-                                <h2 class="nutri__h2">Nutrition Information</h2>
+                                <h2 class="nutri__title">Nutrition Information</h2>
                                 <p class="nutri__p">
                                     Nutrition information is calculated based on our standard
                                     recipes. Only changing drink size will update this information.
@@ -129,9 +131,9 @@
                                 </p>
                             </div>
                             <div class="nutri__container">
-                                <div class="nutri__sel">
-                                    <label class="nutri__label" for="nutri__sel-input">Size</label>
-                                    <select class="nutri__sel-input" id="nutri__sel-input">
+                                <div class="select-list">
+                                    <label class="select-list__label" for="select-list__input">Size</label>
+                                    <select class="select-list__input" id="select-list__input">
                                         <option value="Tall">Tall (12 fl oz)</option>
                                         <option value="Grande" selected>Grande (16 fl oz)</option>
                                         <option value="Venti">Venti (24 fl oz)</option>
@@ -139,7 +141,7 @@
                                     </select>
                                 </div>
                                 <div class="nutri-table">
-                                    <p class="nutri-table__p">
+                                    <p class="nutri-table__header">
                                         Per Serving (16 fl oz)
                                     </p>
                                     <div class="nutri-table__row">
@@ -220,11 +222,11 @@
                                             <b>Caffeine</b> 185mg**
                                         </span>
                                     </div>
-                                    <div class="nutri-table__bottom">
-                                        <p>
+                                    <div class="nutri-table__footer">
+                                        <p class="nutri-table__footer__p">
                                             *Percent Daily Values are based on a 2,000 calorie diet.
                                         </p>
-                                        <p>
+                                        <p class="nutri-table__footer__p">
                                             **Each caffeine value is an approximate value.
                                         </p>
                                     </div>
@@ -258,12 +260,12 @@
                         </div>
                     </div>
                 </section>
-                <section class="rewards">
-                    <div class="rewards__container">
+                <section class="sec-card">
+                    <div class="rewards">
                         <div class="rewards__img">
-                            <a class="rewards__a" href="#"></a>
+                            <a class="rewards__link" href="#"></a>
                             <div class="rewards__overlay">
-                                <h2 class="rewards__h2">
+                                <h2 class="rewards__title">
                                     Join Starbucks Rewards today
                                 </h2>
                                 <p class="rewards__p">
@@ -271,8 +273,8 @@
                                     as few as 2&#45;3 visits.
                                 </p>
                                 <div class="btn">
-                                    <a class="btn__link btn__link--txt-wh" href="#feat">
-                                        <span class="btn__span">JOIN NOW</span>
+                                    <a class="btn__link " href="#feat">
+                                        <span class="btn__label btn__label--wh">JOIN NOW</span>
                                     </a>
                                 </div>
                             </div>
@@ -282,10 +284,10 @@
             </main>
         </div>
         <footer class="footer">
-            <div class="footer__container">
+            <div class="container">
                 <div class="footer__social">
-                    <ul class="ul ul--flex ul--social">
-                        <li class="ul--social__li">
+                    <ul class="ul flex social-list">
+                        <li class="social-list__li">
                             <a
                                 class="ul__link"
                                 href="http://www.facebook.com/starbucks"
@@ -294,7 +296,7 @@
                                 <img src="./img/icons/fb.svg" alt="" class="img" />
                             </a>
                         </li>
-                        <li class=" ul--social__li">
+                        <li class="social-list__li">
                             <a
                                 class="ul__link"
                                 href="http://www.twitter.com/starbucks"
@@ -303,7 +305,7 @@
                                 <img src="./img/icons/twitter.svg" alt="" class="img" />
                             </a>
                         </li>
-                        <li class="ul ul--social__li">
+                        <li class="social-list__li">
                             <a
                                 class="ul__link"
                                 href="https://www.pinterest.com/starbucks/"
@@ -312,7 +314,7 @@
                                 <img src="./img/icons/pin.svg" alt="" class="img" />
                             </a>
                         </li>
-                        <li class="ul--social__li">
+                        <li class="social-list__li">
                             <a
                                 class="ul__link"
                                 href="https://instagram.com/starbucks/"
