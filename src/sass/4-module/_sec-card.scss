@@ -3,7 +3,6 @@
 ==================================== */
 
 .sec-card {
-
     &__title {
         margin: 1.5rem 0 0.5rem;
     }
@@ -11,5 +10,11 @@
     &__sub-title {
         margin: 0 0 1rem;
         font-style: italic;
+    }
+}
+
+.inner-card {
+    &__p {
+        font-size: 13px;
     }
 }
