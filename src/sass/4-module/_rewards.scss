@@ -3,9 +3,12 @@
 ==================================== */
 
 .rewards {
-    color: #fff;
-    background-color: #1f3933;
-
+  
+    &--content {   
+      color: #fff;
+      background-color: #1f3933;
+    }
+  
     &__img {
         background: #1f3933 url("../img/rewards-bg.jpg") no-repeat;
         background-size: 900px;
@@ -20,14 +23,14 @@
 
     &__overlay {
         text-align: center;
-        padding-top: 200px;
+        padding: 200px 1rem 0;
     }
 
     &__title {
         font-size: 28px;
     }
 
-    &__p {
+    &__copy {
         margin-bottom: 3rem;
     }
 }

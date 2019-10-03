@@ -4,7 +4,6 @@
 
 .l-footer {
     background-color: #f9f8f6;
-    margin-top: 1rem;  
 }
 
 .footer {
@@ -16,8 +15,10 @@
         margin: 1rem 0;
     }
 
-    &__email,
-    &__social {
-        margin: 3rem 0;
+    &-email,
+    &-social,
+    &-bottom {
+        padding: 2rem 0;
     }
+  
 }

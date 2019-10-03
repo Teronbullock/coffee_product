@@ -5,12 +5,12 @@
 .ul {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+  
     &__link {
         color: #000;
         text-decoration: none;
     }
-  
   
     /* ================= 
       Ul--modifiers 
@@ -52,29 +52,35 @@
             }
         }
     }
+     /* ================= 
+      Ul--social
+    ==================== */
+  
+     &--social {
+        width: 55%;
+  
+        &__li {
+          height: 30px;
+          width: 30px;
+        }
+    }
  
-}
+     /* ================= 
+      Ul--footer
+    ==================== */
+      &--footer {
+          flex-direction: column;
+          align-items: flex-start;
+      
+          &__li {
+              padding: 0.5rem 0;
+          }
 
-
-
-
-
-.social-list {
-  width: 50%;
+          &__span {
+              cursor: pointer;
+          }
+      }
   
-  &__li {
-      height: 30px;
-      width: 30px;
-  }
-  
 }
 
-.footer-list {
-    &__li {
-        padding: 0.5rem 0;
-    }
 
-    &__span {
-        cursor: pointer;
-    }
-}

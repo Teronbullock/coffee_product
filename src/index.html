@@ -11,7 +11,7 @@
     <body>
         <div class="site-container">
             <header id="header" class="l-header">
-                <div class="wrapper">
+                <div class="header-card">
                     <div class="header-card--info">
                         <ul class="ul ul--center">
                             <li class="ul__li">
@@ -124,14 +124,14 @@
                         </p>
                         <div class="nutri">
                             <div class="nutri__header">
-                                <h2 class="nutri__title">Nutrition Information</h2>
-                                <p class="nutri__p">
+                                <h2 class="nutri__title">Nutrition Information</h2>  
+                            </div>
+                            <div class="nutri__container">
+                                <p class="nutri__copy">
                                     Nutrition information is calculated based on our standard
                                     recipes. Only changing drink size will update this information.
                                     Other customizations will not.
                                 </p>
-                            </div>
-                            <div class="nutri__container">
                                 <div class="select-list">
                                     <label class="select-list__label" for="select-list__input"
                                         >Size</label
@@ -236,9 +236,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner-card">
-                            <h2 class="inner-card__title">Ingredients</h2>
-                            <p class="inner-card__p">
+                        <div class="card">
+                            <h2 class="card__title">Ingredients</h2>
+                            <p class="card__copy">
                                 <b>Ice, Brewed Coffee, Pumpkin Cream Cold Foam</b>
                                 [Cream (Cream, Mono And Diglycerides, Carageenan), Milk, Pumpkin
                                 Spice Sauce (Sugar, Condensed Skim Milk, Pumpkin Puree, Contains 2
@@ -249,11 +249,11 @@
                                 Sorbate, Citric Acid], <b>Pumpkin Spice Topping</b> [Cinnamon,
                                 Ginger, Nutmeg, And Cloves]
                             </p>
-                            <h2 class="inner-card__title">Allergens</h2>
-                            <p class="inner-card__p">
+                            <h2 class="card__title">Allergens</h2>
+                            <p class="card__copy">
                                 Not available for this item
                             </p>
-                            <p class="inner-card__p">
+                            <p class="card__copy">
                                 We cannot guarantee that any unpackaged products served in our
                                 stores are allergen-free because we use shared equipment to store,
                                 prepare, and serve them. Customers with allergies can find
@@ -263,15 +263,15 @@
                         </div>
                     </div>
                 </section>
-                <section class="card">
-                    <div class="rewards">
+                <section class="card" id="rewards">
+                    <div class="rewards--content">
                         <div class="rewards__img">
                             <a class="rewards__link" href="#"></a>
                             <div class="rewards__overlay">
                                 <h2 class="rewards__title">
-                                    Join Starbucks Rewards today
+                                    Join Starbucks Rewards Today
                                 </h2>
-                                <p class="rewards__p">
+                                <p class="rewards__copy">
                                     Just sign up, keep drinking coffee, and you can get Rewards in
                                     as few as 2&#45;3 visits.
                                 </p>
@@ -287,10 +287,10 @@
             </main>
         </div>
         <footer id="footer" class="l-footer">
-            <div class="container">
-                <div class="footer__social">
-                    <ul class="ul ml--flex social-list">
-                        <li class="social-list__li">
+            <div class="footer-social">
+                <div class="container">
+                    <ul class="ul ul--social">
+                        <li class="ul--social__li">
                             <a
                                 class="ul__link"
                                 href="http://www.facebook.com/starbucks"
@@ -299,7 +299,7 @@
                                 <img src="./img/icons/fb.svg" alt="" class="media__img" />
                             </a>
                         </li>
-                        <li class="social-list__li">
+                        <li class="ul--social__li">
                             <a
                                 class="ul__link"
                                 href="http://www.twitter.com/starbucks"
@@ -308,7 +308,7 @@
                                 <img src="./img/icons/twitter.svg" alt="" class="media__img" />
                             </a>
                         </li>
-                        <li class="social-list__li">
+                        <li class="ul--social__li">
                             <a
                                 class="ul__link"
                                 href="https://www.pinterest.com/starbucks/"
@@ -317,7 +317,7 @@
                                 <img src="./img/icons/pin.svg" alt="" class="media__img" />
                             </a>
                         </li>
-                        <li class="social-list__li">
+                        <li class="ul--social__li">
                             <a
                                 class="ul__link"
                                 href="https://instagram.com/starbucks/"
@@ -330,39 +330,39 @@
                 </div>
             </div>
             <div class="footer__line"></div>
-            <div class="container">
-                <div class="footer__email">
-                    <p class="footer__email-p">Join our email list</p>
-                    <form class="form" action="">
-                        <input class="form__input form__email" type="text" value="Email address" />
-                        <input class="form__input form__zip" type="text" value="Zip code" />
-                        <input class="form__submit" type="submit" value="GET STARTED" />
-                    </form>
+            <div class="footer-email">
+                <div class="container">
+                  <p class="footer-email__copy">Join our email list</p>
+                  <form class="form" action="">
+                      <input class="form__input form__email" type="text" value="Email address" />
+                      <input class="form__input form__zip" type="text" value="Zip code" />
+                      <input class="form__submit" type="submit" value="GET STARTED" />
+                  </form>
                 </div>
             </div>
             <div class="footer__line"></div>
-            <div class="container">
-                <div class="footer__bottom">
+            <div class="footer-bottom">
+                <div class="container">
                     <ul class="ul ul--footer">
-                        <li>
+                        <li class="ul__li">
                             <span>English</span>
                         </li>
-                        <li>
+                        <li class="ul__li">
                             <span>Web Accessibility</span>
                         </li>
-                        <li>
+                        <li class="ul__li">
                             <span>Privacy Policy</span>
                         </li>
-                        <li>
+                        <li class="ul__li">
                             <span>Terms of Use</span>
                         </li>
-                        <li>
+                        <li class="ul__li">
                             <span>Customer Service</span>
                         </li>
-                        <li>
+                        <li class="ul__li">
                             <span>Contact Us</span>
                         </li>
-                        <li>
+                        <li class="ul__li">
                             <span>SiteMap</span>
                         </li>
                     </ul>
