@@ -2,6 +2,23 @@
   Hero
 ==================================== */
 
+.l-hero {
+    margin-bottom: 3rem;   
+}  
+
+.hero__copy {
+    margin: 1.25rem 0;
+
+    @media (min-width: $break-s) {
+        margin: 1.5rem 0 2rem;
+    }
+}
+
+
+/* ================================= 
+  Site Title
+==================================== */
+
 .site-title {
     font-size: 26px;
     text-align: center;
@@ -10,17 +27,5 @@
 
     @media (min-width: $break-s) {
         margin: 1.5rem 0;
-    }
-}
-
-.hero {
-    margin-bottom: 3rem;
-    
-    &__p {
-        margin: 1.25rem 0;
-
-        @media (min-width: $break-s) {
-            margin: 1.5rem 0 2rem;
-        }
     }
 }

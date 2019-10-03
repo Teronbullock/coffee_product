@@ -10,10 +10,10 @@
     </head>
     <body>
         <div class="site-container">
-            <header class="header">
-                <div class="header-container">
-                    <div class="header-info">
-                        <ul class="ul ml--flex ml--center">
+            <header id="header" class="l-header">
+                <div class="wrapper">
+                    <div class="header-card--info">
+                        <ul class="ul ul--center">
                             <li class="ul__li">
                                 <a class="ul__link" href="#">Find a Store</a>
                             </li>
@@ -25,10 +25,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header-icon">
+                    <div class="header-card--icon">
                         <a class="site-logo" href="#"
                             ><img
-                                class="site-logo__img"
+                                class="media__img"
                                 src="./img/site-logo.jpg"
                                 alt="Starbuck logo"
                         /></a>
@@ -63,38 +63,38 @@
                             </ul>
                         </div>
                         <div class="nav-mobile" id="nav-mobile">
-                            <ul class="nav-mobile__ul">
-                                <li class="nav-mobile__li">
-                                    <a class="nav-mobile__link" href="#">Coffee</a>
+                            <ul class="ul ul--mobile">
+                                <li class="ul--mobile__li">
+                                    <a class="ul--mobile__link" href="#">Coffee</a>
                                 </li>
-                                <li class="nav-mobile__li">
-                                    <a class="nav-mobile__link" href="#">Tea</a>
+                                <li class="ul--mobile__li">
+                                    <a class="ul--mobile__link" href="#">Tea</a>
                                 </li>
-                                <li class="nav-mobile__li">
-                                    <a class="nav-mobile__link" href="#">Menu</a>
+                                <li class="ul--mobile__li">
+                                    <a class="ul--mobile__link" href="#">Menu</a>
                                 </li>
-                                <li class="nav-mobile__li">
-                                    <a class="nav-mobile__link" href="#">CoffeeHouse</a>
+                                <li class="ul--mobile__li">
+                                    <a class="ul--mobile__link" href="#">CoffeeHouse</a>
                                 </li>
-                                <li class="nav-mobile__li">
-                                    <a class="nav-mobile__link" href="#">Starbuck Rewards</a>
+                                <li class="ul--mobile__li">
+                                    <a class="ul--mobile__link" href="#">Starbuck Rewards</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </header>
-            <div class="hero">
+            <div id="hero" class="l-hero">
                 <div class="container">
                     <h1 class="site-title">
                         The Return of Pumpkin Cream Cold Brew
                     </h1>
                 </div>
-                <div class="img">
-                    <img class="img__media" src="./img/pumpkin-cream-cold-brew.jpg" />
+                <div class="media">
+                    <img class="media__img" src="./img/pumpkin-cream-cold-brew.jpg" />
                 </div>
                 <div class="container">
-                    <p class="hero__p">
+                    <p class="hero__copy">
                         This fall Pumpkin the Cream Cold Brew returns to a store near you. This
                         delicious beverage is made with Starbucks Cold Brew, vanilla, and finished
                         with a pumpkin cream cold foam; made with real pumpkin and a dusting of
@@ -105,19 +105,19 @@
                     <a class="btn__link" href="#feat"><span class="btn__label">Learn More</span></a>
                 </div>
             </div>
-            <main class="main">
-                <section class="sec-card" id="feat">
-                    <div class="sec-card__header">
-                        <div class="img__container">
-                            <img class="img" src="./img/cold_brew.gif" />
+            <main id="main" class="l-main">
+                <section class="card" id="feat">
+                    <div class="card__header">
+                        <div class="media">
+                            <img class="media__img" src="./img/cold_brew.gif" />
                         </div>
                     </div>
                     <div class="container">
-                        <h2 class="sec-card__title">FALL. SEASON. LONG.</h2>
-                        <p class="sec-card__sub-title">
+                        <h2 class="card__title">FALL. SEASON. LONG.</h2>
+                        <p class="card__sub-title">
                             *This fall drink returns for a limited time.
                         </p>
-                        <p class="sec-card__p">
+                        <p class="card__copy">
                             The cold brew&#39;s cocoa notes are perfectly complemented by flavors of
                             vanilla and real pumpkin which results in a smooth, well rounded
                             beverage that balances the flavors of the season without being overly
@@ -264,7 +264,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="sec-card">
+                <section class="card">
                     <div class="rewards">
                         <div class="rewards__img">
                             <a class="rewards__link" href="#"></a>
@@ -278,7 +278,7 @@
                                 </p>
                                 <div class="btn">
                                     <a class="btn__link " href="#feat">
-                                        <span class="btn__label btn__label--wh">JOIN NOW</span>
+                                        <span class="btn__label btn__label--white">JOIN NOW</span>
                                     </a>
                                 </div>
                             </div>
@@ -287,7 +287,7 @@
                 </section>
             </main>
         </div>
-        <footer class="footer">
+        <footer id="footer" class="l-footer">
             <div class="container">
                 <div class="footer__social">
                     <ul class="ul ml--flex social-list">

@@ -3,18 +3,60 @@
 ==================================== */
 
 .ul {
-    padding: 0;
-
-    &__li {
-        display: inline-block;
-    }
+    display: flex;
+    justify-content: space-between;
 
     &__link {
         color: #000;
         text-decoration: none;
     }
+  
+  
+    /* ================= 
+      Ul--modifiers 
+    ==================== */
+  
+    &--center {
+      margin: 0 auto;
+      width: 60%;
+    }
+
+  
+    /* ================= 
+      Ul--mobile
+    ==================== */
+  
+    &--mobile {
+          flex-direction: column;
+          max-width: 480px;
+          background-color: #1e1e1e;
+          padding: 1rem 0;
+    
+          &__link,
+          &__link:active {
+              color: #fff;
+          }
+      
+        &__link {
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+
+            &:hover,
+            &:active {
+                background-color: #ddd;
+                color: #000;
+            }
+        }
+    }
  
 }
+
+
+
 
 
 .social-list {
