@@ -1,0 +1,79 @@
+/* ================================= 
+  list module 
+==================================== */
+
+.m-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+        color: #000;
+        text-decoration: none;
+    }
+
+    /* ========================= 
+    list--modifiers 
+    ============================ */
+
+    &--mobile {
+        flex-direction: column;
+        max-width: 480px;
+        background-color: #1e1e1e;
+        padding: 1rem 0;
+
+        &__link,
+        &__link:active {
+            color: #fff;
+        }
+
+        &__link {
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+
+            &:hover,
+            &:active {
+                background-color: #ddd;
+                color: #000;
+            }
+        }
+    }
+
+    &--utilities {
+        margin: 0 auto;
+        width: 60%;
+        align-items: center;
+        font-size: 12px;
+
+        @media (min-width: $break-m) {
+            margin: 0;
+            width: 100%;
+            padding-right: 2rem;
+        }
+    }
+
+    &--social {
+        width: 55%;
+
+        &__li {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    &--footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__li {
+            padding: 0.5rem 0;
+        }
+
+        &__span {
+            cursor: pointer;
+        }
+    }
+}

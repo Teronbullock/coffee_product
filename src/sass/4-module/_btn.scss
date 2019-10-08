@@ -1,44 +1,17 @@
 /* ================================= 
-  BTN
+  btn module
 ==================================== */
-.btn {
+.m-btn {
     text-align: center;
 
     &__link {
         text-decoration: none;
-        
-    
     }
 
     &__label {
-        border: #006341 solid 2px;
+        border: $tertiary-color solid 2px;
         border-radius: 5px;
         padding: 0.75rem;
-        color: #000;
-    
-        &--white {
-          color: #fff;
-          border: #fff solid 2px;
-        }
+        color: $tertiary-color;
     }
-}
-
-
-
-/* ================================= 
-  Mobile Menu BTN
-==================================== */
-
-.mob-menu-btn {
-  width: 40px;
-  height: 40px;
-  
-  &__bar {
-    display: block;
-    height: 3px;
-    width: 40px;
-    background-color: #006341;
-    margin: 8px 0;
-  }
-  
 }

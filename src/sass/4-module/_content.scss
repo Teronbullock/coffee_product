@@ -1,0 +1,11 @@
+/* ================================= 
+  Content
+==================================== */
+
+.m-content {
+    padding: 0 1rem 3rem;
+
+    &--tertiary {
+        color: $tertiary-color;
+    }
+}

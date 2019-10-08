@@ -3,29 +3,17 @@
 ==================================== */
 
 .l-hero {
-    margin-bottom: 3rem;   
-}  
-
-.hero__copy {
-    margin: 1.25rem 0;
-
+    margin-bottom: 3rem;
+    background-color: $alt-color;
     @media (min-width: $break-s) {
-        margin: 1.5rem 0 2rem;
+        padding: 0 1rem;
     }
-}
 
+    @media (min-width: $break-m) {
+        margin-top: 1rem;
+    }
 
-/* ================================= 
-  Site Title
-==================================== */
-
-.site-title {
-    font-size: 26px;
-    text-align: center;
-    line-height: 1.4;
-    margin: 1rem 0;
-
-    @media (min-width: $break-s) {
-        margin: 1.5rem 0;
+    &__copy {
+        margin: 2rem 0;
     }
 }

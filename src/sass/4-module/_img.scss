@@ -1,0 +1,19 @@
+/* ================================= 
+  Media
+==================================== */
+
+.m-img {
+    line-height: 0;
+
+    &__media {
+        height: 100%;
+        width: 100%;
+    }
+
+    &--inline-50 {
+        @media (min-width: $break-m) {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}

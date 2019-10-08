@@ -1,0 +1,22 @@
+/* ================================= 
+  mobile menu module
+==================================== */
+
+.m-mobile-menu {
+    width: 42px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $break-m) {
+        display: none;
+    }
+
+    &__bar {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #006341;
+    }
+}
