@@ -1,0 +1,40 @@
+/* ================================= 
+  Container - Layout
+==================================== */
+
+.l-container {
+    padding: 1rem 0;
+
+    /* ======================== 
+    Container--Modifiers
+    =========================== */
+    &--pull-right {
+        text-align: center;
+
+        @media (min-width: $break-m) {
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
+            padding-left: 2rem;
+            text-align: left;
+        }
+    }
+
+    &--pull-left {
+        @media (min-width: $break-m) {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+
+    &--hero {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0px;
+        color: $tertiary-color;
+
+        @media (min-width: $break-m) {
+            flex-direction: row;
+        }
+    }
+}

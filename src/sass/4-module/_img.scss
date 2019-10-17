@@ -1,19 +1,38 @@
 /* ================================= 
-  Media
+  Img
 ==================================== */
 
-.m-img {
+.img {
     line-height: 0;
+
+    /* ======================== 
+    Img--Elements
+    =========================== */
 
     &__media {
         height: 100%;
         width: 100%;
     }
 
-    &--inline-50 {
-        @media (min-width: $break-m) {
+    /* ======================== 
+    img--Modifiers
+    =========================== */
+
+    &--display {
+        width: 85%;
+        margin: 0 auto;
+
+        @media (min-width: $break-s) {
+            width: 100%;
+            margin: 0;
             display: inline-block;
+        }
+    }
+
+    &--pull-left {
+        @media (min-width: $break-m) {
             width: 50%;
+            display: inline-block;
         }
     }
 }

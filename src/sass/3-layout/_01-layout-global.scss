@@ -1,0 +1,25 @@
+/* ================================= 
+  Global - Layout
+==================================== */
+
+.l-main,
+.l-header,
+.l-hero__container,
+.l-footer {
+    max-width: 1360px;
+    margin: 0 auto;
+
+    @media (min-width: $break-ret) {
+        max-width: 1680px;
+    }
+}
+
+.l-hero,
+.l-main,
+.l-footer {
+    padding: 0 0.75rem 1rem;
+
+    @media (min-width: $break-m) {
+        padding: 0 1rem 1rem;
+    }
+}

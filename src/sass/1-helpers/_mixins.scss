@@ -43,5 +43,9 @@
         @media (min-width: $break-ret) {
             @content;
         }
+    } @else if $break == "4k" {
+        @media (min-width: $break-4k) {
+            @content;
+        }
     }
 }

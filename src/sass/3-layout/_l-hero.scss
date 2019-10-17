@@ -1,9 +1,12 @@
 /* ================================= 
-  Main
+  Hero - Layout
 ==================================== */
 
-.l-main {
+.l-hero {
+    background-color: $alt-color;
+    height: 100vh;
+
     @media (min-width: $break-m) {
-        padding: 0 1rem;
+        height: auto;
     }
 }

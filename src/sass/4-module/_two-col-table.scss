@@ -5,6 +5,7 @@
 .two-col-table {
     &__header {
         border-bottom: 5px solid #dedede;
+        text-align: left;
     }
 
     &__row {
@@ -15,10 +16,6 @@
     }
 
     &__span {
-        /* ========================= 
-        two-col-table__span--modifier
-        ============================ */
-
         &-l {
             text-align: left;
         }
@@ -37,7 +34,7 @@
 
         &__p {
             margin: 0.25rem 0;
-            font-size: 13px;
+            font-size: 12px;
         }
     }
 }

@@ -2,16 +2,31 @@
   Copy
 ==================================== */
 
-.m-copy {
+.copy {
+    margin: 1rem 0 0;
+
+    /* ======================== 
+    Copy--Modifiers
+    =========================== */
     &--hero {
-        margin: 1.25rem 0;
+        margin: 1.5rem 0 2.25rem;
+        text-align: center;
 
         @media (min-width: $break-s) {
-            margin: 1.5rem 0 2rem;
+            margin: 2rem 0 3rem;
         }
 
         @media (min-width: $break-m) {
-            margin: 0 0 2rem;
+            margin: 0.5rem 0 2rem;
+            text-align: left;
         }
+    }
+
+    &--no-margin {
+        margin: 0;
+    }
+
+    &--bottom-margin {
+        margin-bottom: 2rem;
     }
 }

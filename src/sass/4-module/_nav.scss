@@ -1,19 +1,26 @@
 /* ================================= 
-  nav module
+  nav
 ==================================== */
 
-.m-nav {
-    margin-top: 0.5rem;
+.nav {
     grid-row-start: 3;
     grid-column-start: 1;
-    grid-column-end: 13;
+    grid-column-end: 8;
+    text-transform: uppercase;
 
     @media (min-width: $break-m) {
-        margin-top: 1rem;
+        margin: 1rem auto 0;
+        width: 75%;
         grid-row-start: 2;
-        grid-column-start: 3;
-        grid-column-end: 13;
     }
+
+    @media (min-width: $break-l) {
+        width: 80%;
+    }
+
+    /* ======================== 
+    Nav--Modifiers
+    =========================== */
 
     &__desk,
     &__mobile {
@@ -23,11 +30,7 @@
     &__desk {
         @media (min-width: $break-m) {
             display: block;
-            /* width: 90%;
-            padding: 0 2rem;
-            float: right;
-            margin-top: -2rem;*/
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 }

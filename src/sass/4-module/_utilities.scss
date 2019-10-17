@@ -2,18 +2,23 @@
   Utilities
 ==================================== */
 
-.m-utilities {
+.utilities {
     grid-row-start: 1;
-    grid-column-start: 3;
-    grid-column-end: 11;
+    grid-column-start: 2;
+    grid-column-end: 7;
     margin: 0 auto;
     width: 85%;
     font-size: 12px;
 
     @media (min-width: $break-m) {
-        grid-column-start: 9;
-        grid-column-end: 13;
+        grid-column-start: 6;
+        grid-column-end: 8;
         margin: 0;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    @media (min-width: $break-l) {
         width: 100%;
     }
 }
