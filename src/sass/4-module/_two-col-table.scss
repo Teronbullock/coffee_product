@@ -1,0 +1,41 @@
+/* ================================= 
+  Two Column Table
+==================================== */
+
+.two-col-table {
+    &__header {
+        border-bottom: 5px solid #dedede;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+    }
+
+    &__row {
+        border-bottom: 1px solid #dedede;
+        padding: 0.5rem 0;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+    }
+
+    &__span {
+        &-l {
+            text-align: left;
+        }
+
+        &-r {
+            text-align: right;
+        }
+
+        &-sub {
+            margin-left: 2rem;
+        }
+    }
+
+    &__footer {
+        margin-top: 1rem;
+
+        &__p {
+            margin: 0.25rem 0;
+            font-size: 12px;
+        }
+    }
+}

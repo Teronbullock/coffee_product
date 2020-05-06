@@ -1,0 +1,89 @@
+/* ================================= 
+  Container - Layout
+==================================== */
+
+.l-container {
+    padding: 1rem 0;
+    text-align: center;
+
+    @media (min-width: $break-m) {
+        text-align: left;
+    }
+
+    /* ======================== 
+    Container--Modifiers
+    =========================== */
+
+    &--half-size,
+    &--half-size-right,
+    &--small,
+    &--form {
+        @media (min-width: $break-m) {
+            display: inline-block;
+        }
+    }
+
+    &--half-size-right {
+        @media (min-width: $break-m) {
+            padding-left: 2rem;
+            vertical-align: top;
+        }
+    }
+
+    &--small {
+        @media (min-width: $break-m) {
+            width: 35%;
+            vertical-align: top;
+        }
+    }
+
+    &--half-size-right,
+    &--hero-right {
+        @media (min-width: $break-m) {
+            width: 49%;
+            padding-left: 2rem;
+        }
+    }
+
+    &--half-size {
+        @media (min-width: $break-m) {
+            width: 50%;
+        }
+    }
+
+    &--form {
+        @media (min-width: $break-m) {
+            width: 64%;
+            padding-left: 2rem;
+            padding-top: 0.5rem;
+        }
+    }
+
+    &--hero {
+        display: flex;
+        flex-direction: column;
+        color: $tertiary-color;
+        align-items: center;
+        padding: 1rem 0 0;
+
+        @media (min-width: $break-m) {
+            flex-direction: row;
+            max-width: 1360px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: $break-m) {
+            max-width: 1680px;
+            margin: 0 auto;
+        }
+    }
+
+    &--footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &--txt-left {
+        text-align: left;
+    }
+}

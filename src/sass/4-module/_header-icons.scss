@@ -1,0 +1,23 @@
+/* ================================= 
+  Header-icons
+==================================== */
+
+.header-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    @media (min-width: $break-m) {
+        margin: 1.75rem 0rem 0;
+        width: 100%;
+        grid-row-start: 1;
+        grid-column-end: 2;
+    }
+}

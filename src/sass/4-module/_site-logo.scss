@@ -1,0 +1,13 @@
+/* ================================= 
+  Site Logo
+==================================== */
+
+.site-logo {
+    width: 48px;
+    height: 48px;
+
+    @media (min-width: $break-m) {
+        width: 56px;
+        height: 56px;
+    }
+}

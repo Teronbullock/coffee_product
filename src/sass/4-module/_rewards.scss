@@ -1,0 +1,42 @@
+/* ================================= 
+  Rewards
+==================================== */
+
+.rewards {
+    @media (min-width: $break-m) {
+        display: flex;
+        padding-bottom: 2rem;
+    }
+
+    /* ======================== 
+    Rewards__Element
+    =========================== */
+
+    &__content {
+        width: 100%;
+
+        @media (min-width: $break-m) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        height: 225px;
+    }
+
+    &__overlay {
+        text-align: center;
+
+        @media (min-width: $break-m) {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        margin: 0 0 1.5rem;
+        line-height: 1.2;
+    }
+}

@@ -1,0 +1,13 @@
+/* ================================= 
+  Hero - Layout
+==================================== */
+
+.l-hero {
+    background-color: $alt-color;
+    height: 100%;
+    margin-top: 4.75rem;
+
+    @media (min-width: $break-m) {
+        height: auto;
+    }
+}

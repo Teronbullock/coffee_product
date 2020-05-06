@@ -1,0 +1,36 @@
+/* ================================= 
+  nav
+==================================== */
+
+.nav {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    text-transform: uppercase;
+
+    @media (min-width: $break-m) {
+        margin: 1rem auto 0;
+        width: 75%;
+        grid-row-start: 2;
+    }
+
+    @media (min-width: $break-l) {
+        width: 80%;
+    }
+
+    /* ======================== 
+    Nav--Modifiers
+    =========================== */
+
+    &__desk,
+    &__mobile {
+        display: none;
+    }
+
+    &__desk {
+        @media (min-width: $break-m) {
+            display: block;
+            font-size: 14px;
+        }
+    }
+}

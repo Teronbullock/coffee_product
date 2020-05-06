@@ -1,0 +1,46 @@
+/* ================================= 
+  Section
+==================================== */
+
+.section {
+    padding-top: 1rem;
+
+    /* ======================== 
+    section__Element
+    =========================== */
+
+    &__title {
+        font-size: 24px;
+        margin: 1rem 0 0;
+
+        @media (min-width: $break-m) {
+            margin: 0;
+        }
+    }
+
+    &__sub-title {
+        margin: 0 0 1rem;
+        font-style: italic;
+    }
+
+    &__border {
+        @media (min-width: $break-m) {
+            border-bottom: #dedede solid 1px;
+            margin: 1rem 0;
+        }
+    }
+
+    /* ======================== 
+    Section--Modifiers
+    =========================== */
+
+    &--dark-bg {
+        color: #fff;
+        background-color: #1f3933;
+        padding-bottom: 2rem;
+    }
+
+    @media (min-width: $break-m) {
+        padding-bottom: 0;
+    }
+}
