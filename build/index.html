@@ -1,198 +1,444 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Starbucks - Pumpkin Cream Cold Brew</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Courgette|Lato:400,700|Crete+Round"
+            rel="stylesheet"
+        />
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="js/app.js" async></script>
+    </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Starbucks - Pumpkin Cream Cold Brew</title>
-  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <script src="js/app.js" async></script>
-</head>
+    <body>
+        <div class="l-site-container">
+            <header class="l-header" id="header">
+                <div class="l-header__container">
+                    <div class="utilities">
+                        <ul class="list">
+                            <li class="list__item">
+                                <a class="list__link" href="#">Find a Store</a>
+                            </li>
+                            <li class="list__item">
+                                <a class="list__link" href="#">Sign In</a>
+                            </li>
+                            <li class="list__item">
+                                <a class="list__link" href="#">Join Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-icons">
+                        <a class="site-logo" href="#"
+                            ><img
+                                class="img__media"
+                                src="./img/site-logo.png"
+                                alt="Starbuck logo"
+                        /></a>
 
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__container">
-        <div class="header-info">
-          <ul class="header-info__ul">
-            <li class="header-info__li">
-              <a class="header-info__link" href="#">Find a Store</a>
-            </li>
-            <li class="header-info__li">
-              <a class="header-info__link" href="#">Sign In</a>
-            </li>
-            <li class="header-info__li">
-              <a class="header-info__link" href="#">Join Now</a>
-            </li>
-          </ul>
-        </div>
-        <div class="logo-container">
-          <a class="site-logo" href="#"><img class="site-logo__img" src="https://stories.starbucks.com/uploads/2019/01/Photo_TBD-320x411_1-1.jpg" alt="Starbuck logo"></a>
-          <a href="javascript:void(0);" class="mobile-nav__btn" onclick="hideNav()">
-            <span class="mobile-nav__bar"></span>
-            <span class="mobile-nav__bar"></span>
-            <span class="mobile-nav__bar"></span>
-          </a>
-        </div>  
-        <nav class="nav">
-          <ul class="nav__ul">
-            <li class="nav__li">
-              <a class="nav__link" href="#">Coffee</a>
-            </li>
-            <li class="nav__li">
-              <a class="nav__link" href="#">Tea</a>
-            </li>
-            <li class="nav__li">
-              <a class="nav__link" href="#">Menu</a>
-            </li>
-            <li class="nav__li">
-              <a class="nav__link" href="#">CoffeeHouse</a>
-            </li>
-            <li class="nav__li">
-              <a class="nav__link" href="#">Starbuck Rewards</a>
-            </li>
-            <li class="nav__li">
-              <a class="nav__link" href="#">Gift Cards</a>
-            </li>
-          </ul>
-          <div class="mobile-nav" id="mobile-nav">
-            <ul class="mobile-nav__ul">
-              <li class="mobile-nav__li">
-                <a class="mobile-nav__link" href="#">Coffee</a>
-              </li>
-              <li class="mobile-nav__li">
-                <a class="mobile-nav__link" href="#">Tea</a>
-              </li>
-              <li class="mobile-nav__li">
-                <a class="mobile-nav__link" href="#">Menu</a>
-              </li>
-              <li class="mobile-nav__li">
-                <a class="mobile-nav__link" href="#">CoffeeHouse</a>
-              </li>
-              <li class="mobile-nav__li">
-                <a class="mobile-nav__link" href="#">Starbuck Rewards</a>
-              </li>
-              <li class="mobile-nav__li">
-                <a class="mobile-nav__link" href="#">Gift Cards</a>
-              </li>
-            </ul>
-          </div>  
-        </nav>
-      </div>  
-    </header>
-    <div class="hero">
-      <div class="hero__container">
-        <h1 class="hero__title">The Return of Pumpkin Cream Cold Brew</h1>
-      </div>
-      <div class="hero-img__container">
-        <img class="hero-img" src="https://stories.starbucks.com/uploads/2019/08/Pumpkin-Cream-Cold-Brew-1-1024x702.jpg">
-      </div>
-      <div class="hero__container">
-        <p class="hero__p">
-          This fall Pumpkin the Cream Cold Brew returns to a store near you. This delicious beverage is made with Starbucks Cold Brew, vanilla, and finished
-          with a pumpkin cream cold foam; made with real pumpkin and a dusting of pumpkin spice topping.
-        </p>
-      </div>
-      <div class="btn__container">
-        <span class="btn__span"><a class="btn__call-out" href="#feat">Learn More</a></span>
-      </div>
-    </div>
-    <main class="main">
-     <section class="feat" id="feat">
-       <div class="feat__header">
-         <img class="feat__img" src="https://stories.starbucks.com/uploads/2019/01/Nitro_Cold_Brew-5.gif">
-       </div>
-       <div class="feat__container">
-         <h2 class="feat__h2">FALL. SEASON. LONG.</h2>
-         <p>*This fall drink returns for a limited time.</p>
-         <p>
-           The cold brew&#39;s cocoa notes are perfectly complemented by flavors of
-           vanilla and real pumpkin which results in a smooth, well rounded beverage that balances the flavors of the season without being overly sweet. 
-         </p>
-         <div class="feat__facts">
-           <div>
-            <table>
-              <tr>Nutrition Facts Per Serving (16 fl oz)</tr>
-              <tr>
-                <td>Calories 250</td>
-                <td>Calories from Fat 110</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>% Daily Value*</td>
-              </tr>
-              <tr>
-                <td>Total Fat 12g</td>
-                <td>18%</td>
-              </tr>
-              <tr>
-                <td>Saturated Fat 8g</td>
-                <td>40%</td>
-              </tr>
-              <tr>
-                <td>Trans Fat 0g</td>
-              </tr>
-              <tr>
-                <td>Cholesterol 40mg</td>
-                <td>13%</td>
-              </tr>
-              <tr>
-                <td>Sodium 55mg</td>
-                <td>2%</td>
-              </tr>
-              <tr>
-                <td>Total Carbohydrate 31g</td>
-                <td>10%</td>
-              </tr>
-              <tr>
-                <td>Dietary Fiber 0g</td>
-                <td>0%</td>
-              </tr>
-              <tr>
-                <td>Sugars 31g</td>
-              </tr>
-              <tr>
-                <td>Protein 3g</td>
-              </tr>
-              <tr>
-                <td>Caffeine 185mg**</td>
-              </tr>
-              <tr>
-                <td>*Percent Daily Values are based on a 2,000 calorie diet.</td>
-              </tr>
-              <tr>
-                <td>**Each caffeine value is an approximate value.</td>
-              </tr>
-            </table>
-           </div>
-           <div>
-
-           </div>
-         </div>
-       </div>  
-     </section>
-      <section class="rewards">
-        <div class="rewards__container">
-          <div class="rewards__img">
-            <a class="rewards__a" href="#"></a>
-            <div class="rewards__overlay">
-              <h2 class="rewards__h2">Join Starbucks Rewards today</h2>
-              <p class="rewards__p"> Just sign up, keep drinking coffee, and you can get Rewards in as few as 2&#45;3 visits.</p>
-              <div class="btn__container btn__feat">
-                <span class="btn__span"><a class="btn__call-out btn__feat-a" href="#feat">JOIN NOW</a></span>
-              </div>
+                        <a
+                            class="mobile-menu"
+                            id="mobile-menu"
+                            href="javascript:void(0);"
+                        >
+                            <span class="mobile-menu__bar"></span>
+                            <span class="mobile-menu__bar"></span>
+                            <span class="mobile-menu__bar"></span>
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <div class="nav__desk">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <a class="list__link" href="#">Coffee</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="#">Tea</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="#">Menu</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="#">CoffeeHouse</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="#">Starbuck Rewards</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="#">Gift Cards</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav__mobile" id="nav__mobile">
+                            <ul class="list list--mobile">
+                                <li class="list__item">
+                                    <a class="list--mobile__link" href="#">Coffee</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list--mobile__link" href="#">Tea</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list--mobile__link" href="#">Menu</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list--mobile__link" href="#">CoffeeHouse</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list--mobile__link" href="#"
+                                        >Starbuck Rewards</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="l-hero" id="hero">
+                <div class="l-container l-container--hero">
+                    <div class="l-container l-container--half-size">
+                        <img
+                            class="img img__media"
+                            src="./img/pumpkin-cream-cold-brew.png"
+                        />
+                    </div>
+                    <div class="l-container l-container--hero-right">
+                        <h1 class="site-title">
+                            The Return of Pumpkin Cream Cold Brew
+                        </h1>
+                        <p class="copy--hero">
+                            This fall the Pumpkin Cream Cold Brew returns, made with
+                            Starbucks Cold Brew, vanilla, and finished with a pumpkin
+                            cream cold foam; made with real pumpkin and a dusting of
+                            pumpkin spice topping.
+                        </p>
+                        <div class="btn btn--bottom-space">
+                            <a class="btn__link" href="#feat"
+                                ><span class="btn__label">Learn More</span></a
+                            >
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <main class="l-main" id="main">
+                <section class="section" id="feat">
+                    <div class="img img--pull-left">
+                        <img class="img__media" src="./img/cold_brew.gif" />
+                    </div>
+                    <div class="l-container l-container--half-size-right">
+                        <h2 class="section__title">FALL. SEASON. LONG.</h2>
+                        <p class="section__sub-title">
+                            *This fall drink returns for a limited time.
+                        </p>
+                        <p class="copy">
+                            The cold brew&#39;s cocoa notes are perfectly complemented by
+                            flavors of vanilla and real pumpkin which results in a smooth,
+                            well rounded beverage that balances the flavors of the season
+                            without being overly sweet.
+                        </p>
+                    </div>
+                    <div class="l-container">
+                        <h2 class="section__title section__border">
+                            Nutrition Information
+                        </h2>
+                        <div class="l-container l-container--half-size">
+                            <p class="copy">
+                                Nutrition information is calculated based on our standard
+                                recipes. Only changing drink size will update this
+                                information. Other customizations will not.
+                            </p>
+                            <div class="select-list">
+                                <label class="select-list__label" for="select-list__input"
+                                    >Size</label
+                                >
+                                <select
+                                    class="select-list__input"
+                                    id="select-list__input"
+                                >
+                                    <option value="Tall">Tall (12 fl oz)</option>
+                                    <option value="Grande" selected
+                                        >Grande (16 fl oz)</option
+                                    >
+                                    <option value="Venti">Venti (24 fl oz)</option>
+                                    <option value="Trenta">Trenta (30 fl oz)</option>
+                                </select>
+                            </div>
+                            <div class="two-col-table">
+                                <p class="two-col-table__header">
+                                    Per Serving (16 fl oz)
+                                </p>
+                                <div class="two-col-table__row">
+                                    <span class="two-col-table__span-l">
+                                        <b>Calories</b> 250
+                                    </span>
+                                    <span class="two-col-table__span-r">
+                                        Calories from Fat 110
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span class="two-col-table__span-l"></span>
+                                    <span class="two-col-table__span-r">
+                                        % Daily Value*
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span class="two-col-table__span-l">
+                                        <b>Total Fat</b> 12g
+                                    </span>
+                                    <span class="two-col-table__span-r">
+                                        15%
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span
+                                        class="two-col-table__span-l two-col-table__span-sub"
+                                    >
+                                        Saturated Fat 8g
+                                    </span>
+                                    <span class="two-col-table__span-r">
+                                        40%
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span
+                                        class="two-col-table__span-l two-col-table__span-sub"
+                                    >
+                                        Trans Fat 0g
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span class="two-col-table__span-l">
+                                        <b>Cholesterol</b> 40mg
+                                    </span>
+                                    <span class="two-col-table__span-r">
+                                        13%
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span class="two-col-table__span-l">
+                                        <b>Sodium</b> 55mg
+                                    </span>
+                                    <span class="two-col-table__span-r">
+                                        2%
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span class="two-col-table__span-l">
+                                        <b>Total Carbohydrates</b> 31g
+                                    </span>
+                                    <span class="two-col-table__span-r">
+                                        11%
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span
+                                        class="two-col-table__span-l two-col-table__span-sub"
+                                    >
+                                        Dietary Fiber 0g
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span
+                                        class="two-col-table__span-l two-col-table__span-sub"
+                                    >
+                                        Sugars 31g
+                                    </span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span class="two-col-table__span-l">
+                                        <b>Protein</b> 3g
+                                    </span>
+                                    <span class="two-col-table__span-r">6%</span>
+                                </div>
+                                <div class="two-col-table__row">
+                                    <span class="two-col-table__span-l">
+                                        <b>Caffeine</b> 185mg**
+                                    </span>
+                                </div>
+                                <div class="two-col-table__footer">
+                                    <p class="two-col-table__footer__p">
+                                        *Percent Daily Values are based on a 2,000 calorie
+                                        diet.
+                                    </p>
+                                    <p class="two-col-table__footer__p">
+                                        **Each caffeine value is an approximate value.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-container l-container--half-size-right">
+                            <h2 class="section__title">Ingredients</h2>
+                            <p class="copy--bottom-margin">
+                                <b>Ice, Brewed Coffee, Pumpkin Cream Cold Foam</b>
+                                [Cream (Cream, Mono And Diglycerides, Carageenan), Milk,
+                                Pumpkin Spice Sauce (Sugar, Condensed Skim Milk, Pumpkin
+                                Puree, Contains 2 Or Less Of Fruit And Vegetable Juice For
+                                Color, Natural Flavors, Annatto, Salt, Potassium Sorbate),
+                                Vanilla Syrup (Sugar, Water, Natural Flavors, Potassium
+                                Sorbate, Citric Acid)],
+                                <b>Vanilla Syrup</b> [Sugar, Water, Natural Flavors,
+                                Potassium Sorbate, Citric Acid],
+                                <b>Pumpkin Spice Topping</b> [Cinnamon, Ginger, Nutmeg,
+                                And Cloves]
+                            </p>
+                            <h2 class="section__title">Allergens</h2>
+                            <p class="copy--bottom-margin">
+                                Not available for this item
+                            </p>
+                            <p class="copy--bottom-margin">
+                                We cannot guarantee that any unpackaged products served in
+                                our stores are allergen-free because we use shared
+                                equipment to store, prepare, and serve them. Customers
+                                with allergies can find ingredient information for
+                                products on the labels of our packaged products or online
+                                at Starbucks.com/menu.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section--dark-bg" id="rewards">
+                    <div class="rewards">
+                        <div class="img">
+                            <img
+                                class="img__media"
+                                src="./img/rewards.jpg"
+                                alt="rewards picture of a cup of coffee"
+                            />
+                        </div>
+                        <div class="rewards__content">
+                            <div class="rewards__overlay">
+                                <h2 class="rewards__title">
+                                    Join Starbucks Rewards Today
+                                </h2>
+                                <p class="copy--bottom-margin">
+                                    Just sign up, keep drinking coffee, and you can get
+                                    Rewards in as few as 2&#45;3 visits.
+                                </p>
+                                <div class="btn">
+                                    <a class="btn__link " href="#feat">
+                                        <span class="btn__label btn__label--white"
+                                            >JOIN NOW</span
+                                        >
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="l-footer" id="footer">
+                <div class="l-footer__container l-container l-container--footer">
+                    <div class="l-container l-container--small">
+                        <ul class="list list--social">
+                            <li class="list--social__li">
+                                <a
+                                    class="list__link"
+                                    href="http://www.facebook.com/starbucks"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./img/icons/fb.svg"
+                                        alt=""
+                                        class="img__media"
+                                    />
+                                </a>
+                            </li>
+                            <li class="list--social__li">
+                                <a
+                                    class="list__link"
+                                    href="http://www.twitter.com/starbucks"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./img/icons/twitter.svg"
+                                        alt=""
+                                        class="img__media"
+                                    />
+                                </a>
+                            </li>
+                            <li class="list--social__li">
+                                <a
+                                    class="list__link"
+                                    href="https://www.pinterest.com/starbucks/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./img/icons/pin.svg"
+                                        alt=""
+                                        class="img__media"
+                                    />
+                                </a>
+                            </li>
+                            <li class="list--social__li">
+                                <a
+                                    class="list__link"
+                                    href="https://instagram.com/starbucks/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./img/icons/ig.svg"
+                                        alt=""
+                                        class="img__media"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="l-footer__line"></div>
+                    <div class="l-container l-container--form l-container--txt-left">
+                        <p class="copy--no-margin">Join our email list</p>
+                        <form class="form" action="">
+                            <input
+                                class="form__input form__email"
+                                type="text"
+                                value="Email address"
+                            />
+                            <input
+                                class="form__input form__zip"
+                                type="text"
+                                value="Zip code"
+                            />
+                            <input
+                                class="form__submit"
+                                type="submit"
+                                value="GET STARTED"
+                            />
+                            <p class="form__copy">
+                                By clicking "GET STARTED" I agree to receive news,
+                                promotions, information, and offers from Starbucks. See
+                                our
+                                <a class="form__link" href="#">Privacy Statement</a> and
+                                <a class="form__link" href="#">Customer Service</a>.
+                            </p>
+                        </form>
+                    </div>
+                    <div class="l-footer__line"></div>
+                    <div class="l-container">
+                        <ul class="list list--footer">
+                            <li class="list__item">
+                                <span>English</span>
+                            </li>
+                            <li class="list__item">
+                                <span>Web Accessibility</span>
+                            </li>
+                            <li class="list__item">
+                                <span>Privacy Policy</span>
+                            </li>
+                            <li class="list__item">
+                                <span>Terms of Use</span>
+                            </li>
+                            <li class="list__item">
+                                <span>Customer Service</span>
+                            </li>
+                            <li class="list__item">
+                                <span>Contact Us</span>
+                            </li>
+                            <li class="list__item">
+                                <span>SiteMap</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
-      </section>
-    </main>
-  </div><!-- end wrapper -->
-  <footer>
-    <div class="footer__container">
-    
-    </div>
-  </footer>
-</body>
-
+    </body>
 </html>

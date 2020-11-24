@@ -19,11 +19,6 @@
 /* ================================= 
   Helper Library
 ==================================== */
-.h-center {
-  margin: 0 auto;
-  width: 60%;
-}
-
 /* ================================= 
   Base
 ==================================== */
@@ -412,30 +407,30 @@ body {
   Global - Layout
 ==================================== */
 .l-main,
-.l-header,
+.l-header__container,
 .l-hero__container,
-.l-footer {
+.l-footer__container {
   max-width: 1360px;
   margin: 0 auto;
 }
 @media (min-width: 1920px) {
   .l-main,
-.l-header,
+.l-header__container,
 .l-hero__container,
-.l-footer {
+.l-footer__container {
     max-width: 1680px;
   }
 }
 
 .l-hero,
 .l-main,
-.l-footer {
+.l-footer__container {
   padding: 0 0.75rem 1rem;
 }
 @media (min-width: 768px) {
   .l-hero,
 .l-main,
-.l-footer {
+.l-footer__container {
     padding: 0 1rem 1rem;
   }
 }
@@ -444,6 +439,12 @@ body {
   Header - Layout
 ==================================== */
 .l-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.l-header__container {
   width: 100%;
   padding: 0.25rem 0 0;
   display: grid;
@@ -451,13 +452,13 @@ body {
   grid-template-rows: 1rem auto;
 }
 @media (min-width: 768px) {
-  .l-header {
+  .l-header__container {
     padding: 0rem 1rem;
     height: 70px;
   }
 }
 @media (min-width: 1440px) {
-  .l-header {
+  .l-header__container {
     padding: 0rem;
   }
 }
@@ -467,7 +468,8 @@ body {
 ==================================== */
 .l-hero {
   background-color: #1e3932;
-  height: 100vh;
+  height: 100%;
+  margin-top: 4.75rem;
 }
 @media (min-width: 768px) {
   .l-hero {
@@ -508,38 +510,77 @@ body {
 ==================================== */
 .l-container {
   padding: 1rem 0;
+  text-align: center;
   /* ======================== 
   Container--Modifiers
   =========================== */
 }
-.l-container--pull-right {
-  text-align: center;
-}
 @media (min-width: 768px) {
-  .l-container--pull-right {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-    padding-left: 2rem;
+  .l-container {
     text-align: left;
   }
 }
 @media (min-width: 768px) {
-  .l-container--pull-left {
+  .l-container--half-size, .l-container--half-size-right, .l-container--small, .l-container--form {
     display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .l-container--half-size-right {
+    padding-left: 2rem;
+    vertical-align: top;
+  }
+}
+@media (min-width: 768px) {
+  .l-container--small {
+    width: 35%;
+    vertical-align: top;
+  }
+}
+@media (min-width: 768px) {
+  .l-container--half-size-right, .l-container--hero-right {
+    width: 49%;
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .l-container--half-size {
     width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .l-container--form {
+    width: 64%;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
   }
 }
 .l-container--hero {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0px;
   color: #f9f8f6;
+  align-items: center;
+  padding: 1rem 0 0;
 }
 @media (min-width: 768px) {
   .l-container--hero {
     flex-direction: row;
+    max-width: 1360px;
+    margin: 0 auto;
   }
+}
+@media (min-width: 768px) {
+  .l-container--hero {
+    max-width: 1680px;
+    margin: 0 auto;
+  }
+}
+.l-container--footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.l-container--txt-left {
+  text-align: left;
 }
 
 /* ================================= 
@@ -665,7 +706,7 @@ body {
 .select-list {
   background: url("../img/icons/arrow.png") no-repeat 95% 95%;
   background-size: 25px;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .select-list__label {
   display: block;
@@ -804,11 +845,6 @@ body {
   Form__Elements
   =========================== */
 }
-@media (min-width: 768px) {
-  .form {
-    width: 65%;
-  }
-}
 .form__input {
   background-color: #fff;
   border: #d2d2d2 solid 1px;
@@ -911,11 +947,6 @@ body {
 .list--social {
   width: 100%;
 }
-@media (min-width: 768px) {
-  .list--social {
-    width: 70%;
-  }
-}
 .list--social__li {
   height: 30px;
   width: 30px;
@@ -949,7 +980,6 @@ body {
 }
 .copy--hero {
   margin: 1.5rem 0 2.25rem;
-  text-align: center;
 }
 @media (min-width: 375px) {
   .copy--hero {
@@ -959,7 +989,6 @@ body {
 @media (min-width: 768px) {
   .copy--hero {
     margin: 0.5rem 0 2rem;
-    text-align: left;
   }
 }
 .copy--no-margin {
@@ -974,19 +1003,13 @@ body {
 ==================================== */
 .site-title {
   font-size: 26px;
-  text-align: center;
   line-height: 1.3;
   margin: 0;
-}
-@media (min-width: 768px) {
-  .site-title {
-    text-align: left;
-  }
 }
 @media (min-width: 1024px) {
   .site-title {
     margin: 0;
-    font-size: 22px;
+    font-size: 35px;
   }
 }
 
@@ -1029,6 +1052,11 @@ body {
 }
 .rewards__overlay {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .rewards__overlay {
+    text-align: left;
+  }
 }
 .rewards__title {
   font-size: 28px;

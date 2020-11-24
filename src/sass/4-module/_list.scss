@@ -49,10 +49,6 @@
     &--social {
         width: 100%;
 
-        @media (min-width: $break-m) {
-            width: 70%;
-        }
-
         &__li {
             height: 30px;
             width: 30px;

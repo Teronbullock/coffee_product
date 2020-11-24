@@ -1,11 +1,19 @@
 /* ================================= 
   app.js
 ==================================== */
-function hideNav() {
-  var mNav = document.getElementById("mobile-nav");
-  if (mNav.style.display === "block") {
-    mNav.style.display = "none";
-  } else {
-    mNav.style.display = "block";
-  }
+const mobileNav = document.getElementById("nav__mobile");
+const mobileMenu = document.getElementById("mobile-menu");
+
+mobileMenu.addEventListener("click", () => {
+    if (mobileNav.style.display === "block" || screen.width >= 768) {
+        mobileNav.style.display = "none";
+    } else if (window.screen.width < 768) {
+        mobileNav.style.display = "block";
+    }
+});
+
+/* Hide Mobile-Nav above 768px */
+if (window.screen.width >= 768) {
+    console.log("I work");
+    mobileNav.style.display = "none";
 }

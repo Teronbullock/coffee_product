@@ -3,9 +3,9 @@
 ==================================== */
 
 .l-main,
-.l-header,
+.l-header__container,
 .l-hero__container,
-.l-footer {
+.l-footer__container {
     max-width: 1360px;
     margin: 0 auto;
 
@@ -16,7 +16,7 @@
 
 .l-hero,
 .l-main,
-.l-footer {
+.l-footer__container {
     padding: 0 0.75rem 1rem;
 
     @media (min-width: $break-m) {

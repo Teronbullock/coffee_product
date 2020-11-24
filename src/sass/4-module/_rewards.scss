@@ -28,6 +28,10 @@
 
     &__overlay {
         text-align: center;
+
+        @media (min-width: $break-m) {
+            text-align: left;
+        }
     }
 
     &__title {
